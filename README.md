@@ -14,7 +14,7 @@
   Docker的Cgroup主要用于资源的限制和监控，主要包括内存资源，CPU资源等。Cgroup.go中实现了针对内存的限制。
   
  ##### GO_STUDY
- 1. 学习Go语言的过程，具体参考[Go by Example 中文](https://github.com/GodXuebi/WriteMyDocker/edit/master/README.md)
+ 1. 学习Go语言的过程，具体参考[Go by Example 中文](http://books.studygolang.com/gobyexample/atomic-counters/)
  
 ##### MyDocker-1
 1. 实现RUN命令版本的容器
