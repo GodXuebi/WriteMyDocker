@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	messages := make(chan string)
-	signals := make(chan bool)
+	sgoignals := make(chan bool)
 
 	select {
 	case msg := <-messages:

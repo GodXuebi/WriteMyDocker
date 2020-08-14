@@ -9,7 +9,7 @@ func worker(done chan bool) {
 	fmt.Print("working...")
 	done <- true
 }
-
+//worker waits for main
 func main() {
 	done := make(chan bool, 1)
 	go worker(done)

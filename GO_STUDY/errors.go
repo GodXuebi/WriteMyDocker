@@ -18,6 +18,7 @@ type argError struct {
 	prob string
 }
 
+//Error() string 
 func (e *argError) Error() string {
 	return fmt.Sprintf("%d - %s", e.arg, e.prob)
 }
@@ -46,8 +47,10 @@ func main() {
 		}
 	}
 
+
 	_, e := f2(42)
-	if ae, ok := e.argError; ok {
+	// ae即为一个argError类型的值。ok是一个bool类型，判断ae取值是否存在，如果存在执行if语句。
+	if ae, ok := e.(*argError); ok {
 		fmt.Println(ae.arg)
 		fmt.Println(ae.prob)
 	}

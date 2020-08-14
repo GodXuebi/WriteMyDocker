@@ -51,6 +51,6 @@ func main() {
 	fmt.Println(r1.area())
 	fmt.Println(r1.perim())
 
-	fmt.Println(r.width)
+	
 
 }
